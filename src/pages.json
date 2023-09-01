@@ -1,0 +1,79 @@
+{
+	//组件自动引入规则
+	"easycom": {
+		//是否开启自动扫描
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+	
+        ,{
+            "path" : "pages/showData/showData",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "数据展示",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/controlNode/controlNode",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "节点控制",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+    "tabBar": {
+    	"color": "#7A7E83",
+    	"selectedColor": "#3cc51f",
+    	"borderStyle": "black",
+    	"backgroundColor": "#ffffff",
+    	"list": [{
+    		"pagePath": "pages/index/index",
+    		"iconPath": "static/images/index.png",
+    		"selectedIconPath": "static/images/indexSelected.png",
+    		"text": "首页"
+    	},{
+			"pagePath": "pages/showData/showData",
+			"iconPath": "static/images/showdata.png",
+			"selectedIconPath": "static/images/showdataSelected.png",
+			"text": "数据展示"
+		}, 
+		{
+			"pagePath": "pages/controlNode/controlNode",
+			"iconPath": "static/images/controls.png",
+			"selectedIconPath": "static/images/controlSelected.png",
+			"text": "节点控制"
+		}
+		]
+    },
+	"condition" : {//Mode configuration, effective only during development period.
+		"current": 0,//Current active mode (index entry of list)
+		"list": [
+			{
+				"name": "",//mode name
+				"path": "",//startup page, can not be empty
+				"query": ""//The startup parameters are obtained in the onLoad function of the page.
+			}
+		]
+	}
+}
