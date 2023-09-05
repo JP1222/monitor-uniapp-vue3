@@ -1,6 +1,6 @@
 import { request } from "./http.js"
 
-export function getAllNode(page) {
+export function getAllNode(data) {
 	return request({
 		url: '/node/all',
 		method: 'GET',

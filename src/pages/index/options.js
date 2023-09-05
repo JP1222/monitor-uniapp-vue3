@@ -49,9 +49,9 @@ export const options = [
     prop: 'action',
     unit: ''
   },
-  {
-    label: '节点删除',
-    prop: 'delete',
-    unit: ''
-  }
+  // {
+  //   label: '节点删除',
+  //   prop: 'delete',
+  //   unit: ''
+  // }
 ]
