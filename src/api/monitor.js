@@ -9,7 +9,6 @@ export function getAllNode(data) {
 }
 
 // 查找节点
-
 export function searchNode(data) {
 	return request({
 		url: '/node/' + data.nodeNumber,
@@ -27,7 +26,6 @@ export function getAllNodeData(data) {
 }
 
 // 删除一个节点
-
 export function deleteNode(data) {
 	return request({
 		url: '/node/delete/' + data.nodeNumber,
@@ -53,5 +51,23 @@ export function controlNode(data) {
 		data: {
 			control: data.control
 		}
+	})
+}
+
+export function deleteByList(data){
+	return request({
+		url: `/node/deleteByList`,
+		method: 'POST',
+		timeout: 10000,
+		data
+	})
+}
+
+//查找节点数据
+export function findNodeData(data){
+	return request({
+		url:'/node/all/',
+		method: 'GET',
+		data
 	})
 }

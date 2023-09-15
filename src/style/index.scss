@@ -1,0 +1,8 @@
+.uni-table-scroll {
+	.uni-table-tr:nth-child(odd) {
+		background-color:rgb(241, 241, 241);
+		&:nth-child(1){
+			background: none;
+		}
+	}
+}

@@ -10,6 +10,11 @@ export const options = [
     unit: ''
   },
   {
+    label: '节点状态',
+    prop: 'action',
+    unit: ''
+  },
+  {
     label: '空气湿度',
     prop: 'airWet',
     unit: '%RH'
@@ -44,11 +49,7 @@ export const options = [
     prop: 'date',
     unit: ''
   },
-  {
-    label: '节点状态',
-    prop: 'action',
-    unit: ''
-  },
+
   // {
   //   label: '节点删除',
   //   prop: 'delete',
