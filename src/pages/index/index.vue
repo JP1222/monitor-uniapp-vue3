@@ -52,7 +52,6 @@
 <script>
 import {
 	getAllNode,
-  searchNode,
   deleteByList,
   findNodeData
 } from '../../api/monitor.js'
