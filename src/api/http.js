@@ -1,4 +1,5 @@
-const baseUrl = "http://47.114.81.63:8081"
+// const baseUrl = "http://47.114.81.63:8081"
+const baseUrl = "https://www.dpmonitor.top:8082"
 
 export const request = (params) => {
 	return new Promise((resolve,reject) => {
